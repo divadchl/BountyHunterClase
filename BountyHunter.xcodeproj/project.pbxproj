@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500F3FE11DC4E8940006DDBA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500F3FE01DC4E8940006DDBA /* Social.framework */; };
 		501D072B1D9FFE6A0098C7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D072A1D9FFE6A0098C7B2 /* AppDelegate.swift */; };
 		501D07301D9FFE6A0098C7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D072E1D9FFE6A0098C7B2 /* Main.storyboard */; };
 		501D07321D9FFE6A0098C7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501D07311D9FFE6A0098C7B2 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		500F3FE01DC4E8940006DDBA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		501D07271D9FFE6A0098C7B2 /* BountyHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501D072A1D9FFE6A0098C7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		501D072F1D9FFE6A0098C7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500F3FE11DC4E8940006DDBA /* Social.framework in Frameworks */,
 				501D07491DA02BAD0098C7B2 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500F3FDF1DC4E8940006DDBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500F3FE01DC4E8940006DDBA /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		501D071E1D9FFE6A0098C7B2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 				501D07421DA00B560098C7B2 /* Constantes.swift */,
 				501D07291D9FFE6A0098C7B2 /* BountyHunter */,
 				501D07281D9FFE6A0098C7B2 /* Products */,
+				500F3FDF1DC4E8940006DDBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

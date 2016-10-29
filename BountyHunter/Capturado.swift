@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Social
 
 class Capturado: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate{
 
@@ -57,8 +58,10 @@ class Capturado: UIViewController, UINavigationControllerDelegate, UIImagePicker
     }
     
     
-    @IBAction func btnGuardar(sender: AnyObject) {
+    @IBAction func btnGuardarTouch(sender: AnyObject) {
+        //Define la calidad de la imagen: 1.0 especifica que se guarde al 100 de calidad
         let imageData = NSData(data: UIImageJPEGRepresentation(imvFoto!.image!, 1.0)!)
+        
         fugitiveInfo?.image = imageData
         fugitiveInfo?.captdate = NSDate().timeIntervalSinceReferenceDate
         fugitiveInfo?.captured = true
@@ -71,18 +74,70 @@ class Capturado: UIViewController, UINavigationControllerDelegate, UIImagePicker
             let laFoto = UIImage(data: self.fugitiveInfo!.image!)
             //Si quieren mandar una imagen genérica:
             let image = UIImage(named: "fugitivo")
-            let items: Array<AnyObject> = [image!,texto, laFoto!]
-            let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
-            //esto es solo necesario para el caso del correo
-            avc.setValue("Fugitivo Capturado!", forKey: "Subject")
-            presentViewController(avc, animated: true, completion: nil)
             
-            navigationController?.popViewControllerAnimated(true)
+            let hayFace = SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)
+            let hayTuit = SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)
+            //Si existen las dos apps, consultar cual se usa
+            
+            if hayFace && hayTuit{
+                let ac = UIAlertController(title: "Compartir", message: "Compartir la captura a...", preferredStyle: .Alert)
+                let btnFeiz = UIAlertAction(title: "Facebook", style: .Default, handler: {(UIAlertAction) in
+                    let feizbuc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+                    feizbuc.setInitialText(texto)
+                    feizbuc.addImage(laFoto!)
+                    self.presentViewController(feizbuc, animated: true, completion: {self.navigationController?.popViewControllerAnimated(true)
+                    })
+                })
+                
+                let btnTuit = UIAlertAction(title: "Twiter", style: .Default, handler: {(UIAlertAction) in
+                    let tuiter = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                    tuiter.setInitialText(texto)
+                    tuiter.addImage(laFoto!)
+                    self.presentViewController(tuiter, animated: true, completion: {self.navigationController!.popViewControllerAnimated(true)
+                    })
+                })
+                let noquiero  = UIAlertAction(title: "No Gracias", style: .Destructive, handler: nil)
+                
+                ac.addAction(btnFeiz)
+                ac.addAction(btnTuit)
+                ac.addAction(noquiero)
+                presentViewController(ac, animated: true, completion: nil)
+                
+                
+                
+            }
+            else{
+            
+            
+                if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+                    let feizbuc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+                    feizbuc.setInitialText(texto)
+                    feizbuc.addImage(laFoto!)
+                    presentViewController(feizbuc, animated: true, completion: {self.navigationController?.popViewControllerAnimated(true)})
+                }
+                else if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+                    let tuiter = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                    tuiter.setInitialText(texto)
+                    tuiter.addImage(laFoto!)
+                    presentViewController(tuiter, animated: true, completion: {self.navigationController!.popViewControllerAnimated(true)})
+                }
+                else{
+                    //WHATSAPP: no se pueden compartir dps elementos al mismo tiempo
+                    //let items: Array<AnyObject> = [laFoto!]
+                    //compartir en otras apps:
+                    let items: Array<AnyObject> = [image!,texto, laFoto!]
+                    let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                    //esto es solo necesario para el caso del correo
+                    avc.setValue("Fugitivo Capturado!", forKey: "Subject")
+                    presentViewController(avc, animated: true, completion: nil)
+                    
+                    navigationController?.popViewControllerAnimated(true)
+                }
+            }
         }
         catch{
             print("Error al salvar la BD")
         }
-        
     }
     
     func creaFotoGalleryPicker () {
@@ -100,7 +155,11 @@ class Capturado: UIViewController, UINavigationControllerDelegate, UIImagePicker
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        let image:UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        //Esta es la imagen original, tal como la tomó el usuario
+        //let image:UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        //Esta es la imagen que el usuario recortó:
+        //solo esta disponible aie el objeto imagePicker se configura con la opcion allowsEditing = true
+        let image:UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
         imvFoto.image = image
         self.dismissViewControllerAnimated(true, completion:nil)
     }
