@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Coordenadas</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Coordenadas</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Coordenadas</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Usar Foto</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Champagne &amp; Limousines.ttf</string>
+		<string>Champagne &amp; Limousines Bold.ttf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

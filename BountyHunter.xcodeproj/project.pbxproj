@@ -8,20 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		501D072B1D9FFE6A0098C7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D072A1D9FFE6A0098C7B2 /* AppDelegate.swift */; };
-		501D072D1D9FFE6A0098C7B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D072C1D9FFE6A0098C7B2 /* ViewController.swift */; };
 		501D07301D9FFE6A0098C7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D072E1D9FFE6A0098C7B2 /* Main.storyboard */; };
 		501D07321D9FFE6A0098C7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501D07311D9FFE6A0098C7B2 /* Assets.xcassets */; };
 		501D07351D9FFE6A0098C7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D07331D9FFE6A0098C7B2 /* LaunchScreen.storyboard */; };
+		501D073E1D9FFFA70098C7B2 /* Champagne & Limousines Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 501D073C1D9FFFA70098C7B2 /* Champagne & Limousines Bold.ttf */; };
+		501D073F1D9FFFA70098C7B2 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 501D073D1D9FFFA70098C7B2 /* Champagne & Limousines.ttf */; };
+		501D07411DA002550098C7B2 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D07401DA002550098C7B2 /* CustomLabel.swift */; };
+		501D07431DA00B560098C7B2 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D07421DA00B560098C7B2 /* Constantes.swift */; };
+		501D07451DA015C90098C7B2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D07441DA015C90098C7B2 /* CustomTextField.swift */; };
+		501D07471DA02B0F0098C7B2 /* BountyHunter.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 501D07461DA02B0F0098C7B2 /* BountyHunter.sqlite */; };
+		501D07491DA02BAD0098C7B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D07481DA02BAD0098C7B2 /* CoreData.framework */; };
+		501D076F1DA02EE10098C7B2 /* BountyHunter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 501D076D1DA02EE10098C7B2 /* BountyHunter.xcdatamodeld */; };
+		501D07711DA035360098C7B2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D07701DA035360098C7B2 /* DBManager.swift */; };
+		50CF4C0E1DA938D500FA7C99 /* FugitivosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF4C0D1DA938D500FA7C99 /* FugitivosTableViewController.swift */; };
+		50CF4C111DA9452800FA7C99 /* Fugitive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF4C0F1DA9452800FA7C99 /* Fugitive+CoreDataProperties.swift */; };
+		50CF4C121DA9452800FA7C99 /* Fugitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF4C101DA9452800FA7C99 /* Fugitive.swift */; };
+		50CF4C141DA9546C00FA7C99 /* CapturadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF4C131DA9546C00FA7C99 /* CapturadosTableViewController.swift */; };
+		50CF4C161DA9686D00FA7C99 /* NuevoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF4C151DA9686D00FA7C99 /* NuevoViewController.swift */; };
+		50D0970E1DC3FC6200184DF8 /* Capturado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D0970D1DC3FC6200184DF8 /* Capturado.swift */; };
+		FBAFAE7E1DC3E73100FA7797 /* fugitivo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAFAE7D1DC3E73100FA7797 /* fugitivo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		501D07271D9FFE6A0098C7B2 /* BountyHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501D072A1D9FFE6A0098C7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		501D072C1D9FFE6A0098C7B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		501D072F1D9FFE6A0098C7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		501D07311D9FFE6A0098C7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501D07341D9FFE6A0098C7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501D07361D9FFE6A0098C7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501D073C1D9FFFA70098C7B2 /* Champagne & Limousines Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Bold.ttf"; sourceTree = "<group>"; };
+		501D073D1D9FFFA70098C7B2 /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		501D07401DA002550098C7B2 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		501D07421DA00B560098C7B2 /* Constantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		501D07441DA015C90098C7B2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = BountyHunter/CustomTextField.swift; sourceTree = "<group>"; };
+		501D07461DA02B0F0098C7B2 /* BountyHunter.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = BountyHunter.sqlite; sourceTree = "<group>"; };
+		501D07481DA02BAD0098C7B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		501D076E1DA02EE10098C7B2 /* BountyHunter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BountyHunter.xcdatamodel; sourceTree = "<group>"; };
+		501D07701DA035360098C7B2 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = BountyHunter/DBManager.swift; sourceTree = "<group>"; };
+		50CF4C0D1DA938D500FA7C99 /* FugitivosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FugitivosTableViewController.swift; path = BountyHunter/FugitivosTableViewController.swift; sourceTree = "<group>"; };
+		50CF4C0F1DA9452800FA7C99 /* Fugitive+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fugitive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50CF4C101DA9452800FA7C99 /* Fugitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fugitive.swift; sourceTree = "<group>"; };
+		50CF4C131DA9546C00FA7C99 /* CapturadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturadosTableViewController.swift; sourceTree = "<group>"; };
+		50CF4C151DA9686D00FA7C99 /* NuevoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoViewController.swift; sourceTree = "<group>"; };
+		50D0970D1DC3FC6200184DF8 /* Capturado.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capturado.swift; sourceTree = "<group>"; };
+		FBAFAE7D1DC3E73100FA7797 /* fugitivo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fugitivo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501D07491DA02BAD0098C7B2 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +69,15 @@
 		501D071E1D9FFE6A0098C7B2 = {
 			isa = PBXGroup;
 			children = (
+				50CF4C151DA9686D00FA7C99 /* NuevoViewController.swift */,
+				50CF4C131DA9546C00FA7C99 /* CapturadosTableViewController.swift */,
+				50CF4C0F1DA9452800FA7C99 /* Fugitive+CoreDataProperties.swift */,
+				50CF4C101DA9452800FA7C99 /* Fugitive.swift */,
+				50CF4C0D1DA938D500FA7C99 /* FugitivosTableViewController.swift */,
+				501D07701DA035360098C7B2 /* DBManager.swift */,
+				501D07481DA02BAD0098C7B2 /* CoreData.framework */,
+				501D07441DA015C90098C7B2 /* CustomTextField.swift */,
+				501D07421DA00B560098C7B2 /* Constantes.swift */,
 				501D07291D9FFE6A0098C7B2 /* BountyHunter */,
 				501D07281D9FFE6A0098C7B2 /* Products */,
 			);
@@ -54,12 +94,18 @@
 		501D07291D9FFE6A0098C7B2 /* BountyHunter */ = {
 			isa = PBXGroup;
 			children = (
+				FBAFAE7D1DC3E73100FA7797 /* fugitivo.png */,
+				501D076D1DA02EE10098C7B2 /* BountyHunter.xcdatamodeld */,
+				501D07461DA02B0F0098C7B2 /* BountyHunter.sqlite */,
+				501D07401DA002550098C7B2 /* CustomLabel.swift */,
+				501D073C1D9FFFA70098C7B2 /* Champagne & Limousines Bold.ttf */,
+				501D073D1D9FFFA70098C7B2 /* Champagne & Limousines.ttf */,
 				501D072A1D9FFE6A0098C7B2 /* AppDelegate.swift */,
-				501D072C1D9FFE6A0098C7B2 /* ViewController.swift */,
 				501D072E1D9FFE6A0098C7B2 /* Main.storyboard */,
 				501D07311D9FFE6A0098C7B2 /* Assets.xcassets */,
 				501D07331D9FFE6A0098C7B2 /* LaunchScreen.storyboard */,
 				501D07361D9FFE6A0098C7B2 /* Info.plist */,
+				50D0970D1DC3FC6200184DF8 /* Capturado.swift */,
 			);
 			path = BountyHunter;
 			sourceTree = "<group>";
@@ -91,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Infraestructura;
 				TargetAttributes = {
 					501D07261D9FFE6A0098C7B2 = {
@@ -123,8 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				501D07351D9FFE6A0098C7B2 /* LaunchScreen.storyboard in Resources */,
+				501D073F1D9FFFA70098C7B2 /* Champagne & Limousines.ttf in Resources */,
+				501D07471DA02B0F0098C7B2 /* BountyHunter.sqlite in Resources */,
 				501D07321D9FFE6A0098C7B2 /* Assets.xcassets in Resources */,
+				501D073E1D9FFFA70098C7B2 /* Champagne & Limousines Bold.ttf in Resources */,
 				501D07301D9FFE6A0098C7B2 /* Main.storyboard in Resources */,
+				FBAFAE7E1DC3E73100FA7797 /* fugitivo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +185,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501D072D1D9FFE6A0098C7B2 /* ViewController.swift in Sources */,
+				50CF4C161DA9686D00FA7C99 /* NuevoViewController.swift in Sources */,
+				50D0970E1DC3FC6200184DF8 /* Capturado.swift in Sources */,
+				501D07431DA00B560098C7B2 /* Constantes.swift in Sources */,
+				501D076F1DA02EE10098C7B2 /* BountyHunter.xcdatamodeld in Sources */,
+				501D07411DA002550098C7B2 /* CustomLabel.swift in Sources */,
+				50CF4C121DA9452800FA7C99 /* Fugitive.swift in Sources */,
+				50CF4C0E1DA938D500FA7C99 /* FugitivosTableViewController.swift in Sources */,
+				50CF4C111DA9452800FA7C99 /* Fugitive+CoreDataProperties.swift in Sources */,
+				50CF4C141DA9546C00FA7C99 /* CapturadosTableViewController.swift in Sources */,
 				501D072B1D9FFE6A0098C7B2 /* AppDelegate.swift in Sources */,
+				501D07451DA015C90098C7B2 /* CustomTextField.swift in Sources */,
+				501D07711DA035360098C7B2 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +236,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -199,11 +261,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -221,8 +284,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,9 +303,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -253,6 +320,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gonzalez.angel.BountyHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -264,6 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gonzalez.angel.BountyHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -286,8 +355,22 @@
 				501D073B1D9FFE6A0098C7B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		501D076D1DA02EE10098C7B2 /* BountyHunter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				501D076E1DA02EE10098C7B2 /* BountyHunter.xcdatamodel */,
+			);
+			currentVersion = 501D076E1DA02EE10098C7B2 /* BountyHunter.xcdatamodel */;
+			path = BountyHunter.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 501D071F1D9FFE6A0098C7B2 /* Project object */;
 }
